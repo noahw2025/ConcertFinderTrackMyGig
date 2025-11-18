@@ -3,20 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrackMyGig | Login</title>
+  <title>TrackMyGig | Log In</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="auth">
   <div class="container">
     <div class="form-box">
       <h1>TrackMyGig</h1>
-      <h2>Login</h2>
+      <p class="tagline">
+        Discover upcoming concerts, save your favorites, and track every show you attend.
+      </p>
 
-      <input type="email" id="loginEmail" placeholder="Email" required />
-      <input type="password" id="loginPassword" placeholder="Password" required />
-      <button onclick="handleLogin()">Login</button>
+      <h2>Log In</h2>
 
-      <p>Don't have an account? <a href="signup.html">Create one</a></p>
+      <input
+        type="email"
+        id="loginEmail"
+        placeholder="Email"
+        autocomplete="email"
+      />
+      <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password"
+        autocomplete="current-password"
+      />
+
+      <button type="button" onclick="handleLogin()">Log In</button>
+
+      <p>
+        Don’t have an account?
+        <a href="signup.html">Sign up here</a>
+      </p>
     </div>
   </div>
 
